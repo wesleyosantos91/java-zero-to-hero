@@ -10,6 +10,23 @@ Ao final deste módulo, você terá construído um CRUD completo de Clientes com
 
 ---
 
+## O Que Você Vai Construir
+
+Uma API REST de Gerenciamento de Clientes com os seguintes endpoints:
+
+```
+GET    /api/v1/clientes          → Lista todos os clientes (paginado)
+GET    /api/v1/clientes/{id}     → Busca cliente por ID (404 se não existir)
+POST   /api/v1/clientes          → Cadastra novo cliente (201 Created)
+PUT    /api/v1/clientes/{id}     → Atualiza cliente completo
+PATCH  /api/v1/clientes/{id}/status → Ativa ou desativa cliente
+DELETE /api/v1/clientes/{id}     → Remove cliente (204 No Content)
+```
+
+Tecnologias: Spring Boot 3.x + Java 17 + Spring Data JPA + Oracle + Bean Validation
+
+---
+
 ## Ementa
 
 | # | Arquivo | Tópico Principal | Subtópicos |
