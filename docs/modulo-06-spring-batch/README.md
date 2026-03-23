@@ -12,14 +12,14 @@ Processamento em lote é uma habilidade essencial no mercado corporativo brasile
 
 ## Ementa
 
-| Aula | Título | Carga Horária Estimada |
-|------|--------|----------------------|
-| 01 | Introdução ao Spring Batch | 3h |
-| 02 | Conceitos Fundamentais | 4h |
-| 03 | Importação: Arquivo CSV para Oracle | 5h |
-| 04 | Exportação: Oracle para Arquivo CSV | 4h |
-| 05 | Controle de Transação e Erros | 4h |
-| 06 | Projeto Completo Integrado | 6h |
+| Aula | Título | Arquivo | Carga Horária Estimada |
+|------|--------|---------|----------------------|
+| 01 | Introdução ao Spring Batch | [`01-introducao-spring-batch.md`](01-introducao-spring-batch.md) | 3h |
+| 02 | Conceitos Fundamentais | [`02-conceitos-fundamentais.md`](02-conceitos-fundamentais.md) | 4h |
+| 03 | Importação: Arquivo CSV para Oracle | [`03-importacao-arquivo-para-oracle.md`](03-importacao-arquivo-para-oracle.md) | 5h |
+| 04 | Exportação: Oracle para Arquivo CSV | [`04-exportacao-oracle-para-arquivo.md`](04-exportacao-oracle-para-arquivo.md) | 4h |
+| 05 | Jobs Avançados: Particionamento, Fluxos e Monitoramento | [`05-jobs-avancados.md`](05-jobs-avancados.md) | 4h |
+| 06 | Projeto Final: Sistema de Processamento de Pedidos | [`06-projeto-final-batch.md`](06-projeto-final-batch.md) | 6h |
 
 **Carga Horária Total Estimada:** aproximadamente 26 horas
 
@@ -109,8 +109,8 @@ modulo-06-spring-batch/
 ├── 02-conceitos-fundamentais.md           (Job, Step, Reader, Processor, Writer)
 ├── 03-importacao-arquivo-para-oracle.md   (Fluxo 1: CSV local -> Oracle)
 ├── 04-exportacao-oracle-para-arquivo.md   (Fluxo 2: Oracle -> CSV local)
-├── 05-controle-transacao-e-erros.md       (Skip, Retry, Fault Tolerance, metadados)
-└── 06-projeto-completo.md                 (Projeto integrado final com ambos os fluxos)
+├── 05-jobs-avancados.md                   (Particionamento, fluxos condicionais, monitoramento)
+└── 06-projeto-final-batch.md             (Projeto final: processamento de pedidos)
 ```
 
 ---
@@ -312,28 +312,30 @@ Use este checklist para acompanhar seu progresso. Marque cada item somente quand
 - [ ] Experimentei o JdbcPagingItemReader como alternativa
 - [ ] Fiz todos os exercícios práticos da aula
 
-### Aula 05 - Controle de Transação e Erros
+### Aula 05 - Jobs Avançados
 - [ ] Entendo como Spring Batch abre e fecha transações por chunk
-- [ ] Sei o que acontece quando um item dentro de um chunk lança exceção
+- [ ] Implementei particionamento com EstadoPartitioner e TaskExecutorPartitionHandler
+- [ ] Configurei fluxo condicional com JobExecutionDecider
+- [ ] Configurei steps em paralelo com split() e SimpleAsyncTaskExecutor
 - [ ] Configurei .faultTolerant().skipLimit(10).skip(MinhaException.class)
 - [ ] Configurei .faultTolerant().retryLimit(3).retry(TransientException.class)
-- [ ] Implementei SkipListener que escreve registros ignorados em arquivo
-- [ ] Sei usar JobParameters com timestamp para garantir re-execução
+- [ ] Implementei SkipListener que registra itens ignorados em log
 - [ ] Consultei BATCH_JOB_INSTANCE, BATCH_JOB_EXECUTION e BATCH_STEP_EXECUTION no SQL
-- [ ] Simulei uma falha e reiniciei o job com sucesso
+- [ ] Simulei uma falha e reiniciei o job com sucesso via JobOperator
 - [ ] Fiz todos os exercícios da aula
 
-### Aula 06 - Projeto Completo
+### Aula 06 - Projeto Final: Processamento de Pedidos
 - [ ] O projeto Maven compila sem erros com `mvn clean package`
-- [ ] Oracle está rodando no Docker com o schema criado
+- [ ] Oracle está rodando no Docker com o schema criado (pedidos + estoque)
 - [ ] As tabelas de metadados do Spring Batch foram criadas no Oracle
-- [ ] O job de importação funciona end-to-end (CSV -> Oracle)
-- [ ] O job de exportação funciona end-to-end (Oracle -> CSV)
+- [ ] Step 1 (ValidarArquivoTasklet) valida e rejeita arquivos inválidos
+- [ ] Step 2 (ImportarPedidosStep) importa o CSV para a tabela pedidos
+- [ ] Step 3 (ProcessarStatusStep) verifica estoque e atualiza status
+- [ ] Step 4 (GerarRelatorioStep) exporta relatório CSV com todos os pedidos
 - [ ] Os endpoints REST de importação e exportação funcionam
-- [ ] Skip de registros inválidos está configurado em ambos os jobs
-- [ ] Os metadados de execução são salvos no Oracle
+- [ ] O listener exibe métricas detalhadas ao final do job
 - [ ] Consegui monitorar execuções consultando as tabelas BATCH_*
-- [ ] Completei pelo menos 2 dos desafios de extensão do projeto
+- [ ] Completei pelo menos 2 dos exercícios finais do módulo
 
 ---
 

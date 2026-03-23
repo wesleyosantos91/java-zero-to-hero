@@ -43,12 +43,12 @@ Não pule módulos. Cada etapa depende da anterior.
 
 Ao longo da formação, você vai construir **projetos reais e incrementais**:
 
-1. **Módulo 1** — Sistema de cadastro de clientes em Java puro (console)
-2. **Módulo 2** — Banco de dados de clientes no Oracle com scripts SQL completos
-3. **Módulo 3** — CRUD em Java conectado ao Oracle via JDBC
-4. **Módulo 4** — Documentação e testes de uma API REST (teoria + Postman/curl)
-5. **Módulo 5** — API REST completa de gerenciamento de clientes com Spring Boot + Oracle
-6. **Módulo 6** — Sistema de importação/exportação de dados em lote entre arquivo CSV e Oracle
+1. **Módulo 1** — Sistema de Gerenciamento de Biblioteca (Java puro, console)
+2. **Módulo 2** — Schema completo de e-commerce no Oracle com scripts SQL (DDL/DML/Queries)
+3. **Módulo 3** — CRUD de Clientes com JDBC, HikariCP e DAO Pattern
+4. **Módulo 4** — Design e documentação de API REST (HTTP, verbos, JSON, OpenAPI)
+5. **Módulo 5** — API REST de Clientes com Spring Boot 3, JPA, Bean Validation e Swagger
+6. **Módulo 6** — Sistema de Processamento de Pedidos: 4 steps encadeados (CSV ↔ Oracle)
 
 Ao final, você terá um **portfólio funcional** com projetos encadeados e complementares.
 
@@ -84,8 +84,8 @@ Antes de começar, garanta que você tem instalado:
 
 | Ferramenta | Versão Mínima | Para que serve |
 |-----------|---------------|----------------|
-| JDK (OpenJDK ou Oracle JDK) | 17+ | Compilar e executar Java |
-| Maven | 3.8+ | Gerenciar dependências e build |
+| JDK (OpenJDK ou Oracle JDK) | 21+ | Compilar e executar Java |
+| Maven | 3.9+ | Gerenciar dependências e build |
 | IntelliJ IDEA ou VS Code | Qualquer | IDE para desenvolvimento |
 | Docker Desktop | Qualquer | Subir Oracle localmente |
 | DBeaver ou SQL Developer | Qualquer | Cliente de banco de dados |
@@ -96,8 +96,8 @@ Antes de começar, garanta que você tem instalado:
 
 ```bash
 # Verifique cada ferramenta:
-java -version        # Deve mostrar 17 ou superior
-mvn -version         # Deve mostrar 3.8 ou superior
+java -version        # Deve mostrar 21 ou superior
+mvn -version         # Deve mostrar 3.9 ou superior
 docker --version     # Qualquer versão recente
 git --version        # Qualquer versão recente
 ```

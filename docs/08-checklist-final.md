@@ -1,56 +1,18 @@
-# Checklist final de aceite (semana completa)
+# ~~Checklist Final~~ — Arquivo Legado
 
-Use este checklist no final da capacitacao.
-Aprovacao minima: concluir todos os itens obrigatorios e explicar os conceitos centrais.
+> **Este arquivo pertence à estrutura antiga e foi substituído.**
+> O conteúdo foi expandido, corrigido e reorganizado nos módulos atualizados.
 
-## A. Fundamentos Java (obrigatorio)
-- [ ] `java -version` funciona.
-- [ ] `mvn -version` funciona.
-- [ ] voce roda `HelloWorld` sem ajuda.
-- [ ] voce explica o papel de `main`.
+---
 
-## B. Logica e OO (obrigatorio)
-- [ ] voce usa `if/else`, `for` e `while`.
-- [ ] voce explica classe vs objeto.
-- [ ] voce demonstra encapsulamento.
-- [ ] voce demonstra heranca.
-- [ ] voce demonstra polimorfismo.
-- [ ] voce demonstra abstracao.
+## Onde encontrar o conteúdo atualizado
 
-## C. SQL (obrigatorio)
-- [ ] voce cria tabela com DDL.
-- [ ] voce insere e consulta com DML.
-- [ ] voce faz update com `WHERE`.
-- [ ] voce faz delete com `WHERE`.
+**TRILHA-DE-APRENDIZADO.md** → [`TRILHA-DE-APRENDIZADO.md`](TRILHA-DE-APRENDIZADO.md)
 
-## D. Oracle + Docker (obrigatorio)
-- [ ] container Oracle sobe com sucesso.
-- [ ] voce executa `SELECT 1 FROM dual`.
-- [ ] voce sabe explicar URL JDBC usada no projeto.
+Para a trilha completa e atualizada, consulte:
+- [`TRILHA-DE-APRENDIZADO.md`](TRILHA-DE-APRENDIZADO.md)
+- [`00-como-usar-este-material.md`](00-como-usar-este-material.md)
 
-## E. REST (obrigatorio)
-- [ ] `GET /clientes` retorna 200.
-- [ ] `POST /clientes` retorna 201.
-- [ ] validacao invalida retorna 400.
-- [ ] voce explica `@RestController`, `@RequestBody`, `@Valid`.
+---
 
-## F. CRUD com banco (obrigatorio)
-- [ ] `GET /clientes/{id}` funciona.
-- [ ] `PUT /clientes/{id}` funciona.
-- [ ] `DELETE /clientes/{id}` funciona.
-- [ ] voce explica quando retornar 404.
-
-## G. Batch (obrigatorio)
-- [ ] job de import funciona.
-- [ ] job de export funciona.
-- [ ] CSV de saida e gerado.
-- [ ] contagem banco e CSV batem.
-- [ ] voce explica `Job`, `Step`, `Tasklet`, `JobLauncher`, `@Bean`, `@Qualifier`.
-
-## H. Fixacao (obrigatorio)
-- [ ] N1 concluido em todos os dias.
-- [ ] N2 concluido na maioria dos dias.
-- [ ] pelo menos 2 N3 concluidos.
-
-## Resultado final
-- [ ] voce consegue explicar o fluxo completo da semana do Dia 1 ao Dia 7.
+*Este arquivo é mantido apenas para referência histórica.*

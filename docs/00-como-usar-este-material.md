@@ -1,53 +1,149 @@
-# Como usar este material (aluno iniciante absoluto)
+# Como Usar Este Material
 
-## Objetivo deste guia
-Ajudar voce a estudar sem se perder, mesmo sem base em programacao.
+## Para Quem é Este Material
 
-## Como cada arquivo foi desenhado
-Cada dia da trilha segue a mesma estrutura:
-1. Conceito antes do codigo.
-2. Passo a passo tecnico.
-3. Explicacao do por que de cada escolha.
-4. Erros comuns e como corrigir.
-5. Exercicios N1, N2 e N3.
-6. Checklist de conclusao.
+Este repositório é uma formação completa de Java em português, projetada para quem:
+- Nunca programou antes **ou**
+- Já programa em outra linguagem e quer aprender Java com foco em backend corporativo
 
-## Metodo de estudo recomendado
-Use o ciclo abaixo em todos os topicos:
-1. Entender o conceito.
-2. Executar o passo tecnico.
-3. Explicar com suas palavras.
-4. Fazer exercicio de fixacao.
+Ao final você estará apto a trabalhar com Spring Boot e Spring Batch em ambientes com Oracle Database.
 
-## Como usar N1, N2, N3
-- N1: basico e obrigatorio.
-- N2: aplicacao com pequena variacao.
-- N3: desafio para autonomia.
+---
 
-## Regra de progresso
-Nao avance para o proximo dia se nao conseguir:
-1. rodar o que foi pedido.
-2. explicar o por que das anotacoes/comandos.
+## Estrutura da Formação
 
-## Projeto do aluno
-O projeto e criado no Dia 5 e evolui ate o Dia 7.
-Caminho sugerido:
-`C:\dev\java-zero-to-hero\workspace-aluno\sistema-clientes`
+A formação é dividida em **6 módulos sequenciais**. Cada módulo tem:
+- Um `README.md` com ementa, objetivos e checklist de conclusão
+- Tópicos numerados com teoria, código completo e exemplos reais
+- Exercícios em 3 níveis: Básico, Intermediário e Avançado
+- Um projeto prático integrando todos os conceitos do módulo
 
-## Ordem de estudo
-1. `docs/10-glossario-para-iniciante.md`
-2. `docs/01-dia-1-setup-e-hello-world.md`
-3. `docs/02-dia-2-logica-e-oo.md`
-4. `docs/03-dia-3-sql-ddl-dml.md`
-5. `docs/04-dia-4-oracle-docker-e-jdbc.md`
-6. `docs/05-dia-5-rest-com-spring.md`
-7. `docs/13-guia-anotacoes-rest.md`
-8. `docs/06-dia-6-crud-rest-oracle.md`
-9. `docs/07-dia-7-spring-batch.md`
-10. `docs/14-guia-anotacoes-batch.md`
-11. `docs/08-checklist-final.md`
-12. `docs/11-erros-comuns-e-correcoes.md`
+```
+docs/
+├── modulo-01-java-oo/       ← Comece aqui
+├── modulo-02-banco-dados/
+├── modulo-03-jdbc/
+├── modulo-04-rest-api/
+├── modulo-05-spring-boot/
+└── modulo-06-spring-batch/  ← Conclua aqui
+```
 
-## Meta realista da semana
-- Voce nao vai virar especialista em 7 dias.
-- Voce vai sair com base forte e projeto funcional ponta a ponta.
+---
+
+## Ordem de Estudo
+
+**Nunca pule módulos.** A formação é progressiva:
+
+| Etapa | O que você aprende | Onde encontrar |
+|-------|-------------------|----------------|
+| 1 | Java OO — fundamentos, classes, herança, coleções | [`modulo-01-java-oo/`](modulo-01-java-oo/README.md) |
+| 2 | Oracle SQL — DDL, DML, JOINs, modelagem | [`modulo-02-banco-dados/`](modulo-02-banco-dados/README.md) |
+| 3 | JDBC — conectar Java ao Oracle, DAO pattern | [`modulo-03-jdbc/`](modulo-03-jdbc/README.md) |
+| 4 | REST API — HTTP, verbos, JSON, boas práticas | [`modulo-04-rest-api/`](modulo-04-rest-api/README.md) |
+| 5 | Spring Boot 3 — APIs REST com JPA e validação | [`modulo-05-spring-boot/`](modulo-05-spring-boot/README.md) |
+| 6 | Spring Batch — importação e exportação em lote | [`modulo-06-spring-batch/`](modulo-06-spring-batch/README.md) |
+
+---
+
+## Método de Estudo Recomendado
+
+Para cada tópico, siga este ciclo:
+
+```
+1. LER    → leia o conteúdo teórico até o final
+2. DIGITAR → digite os exemplos na IDE (não copie e cole)
+3. EXECUTAR → rode o código e observe o resultado
+4. EXPERIMENTAR → modifique o código e veja o que muda
+5. PRATICAR → faça os exercícios (Básico → Intermediário → Avançado)
+```
+
+### Por que digitar em vez de copiar?
+
+Digitar obriga você a prestar atenção em cada caractere, tipo e anotação. Erros de digitação são aliados — eles ensinam o que cada parte do código faz quando está presente ou ausente.
+
+---
+
+## Os Três Níveis de Exercícios
+
+Cada tópico termina com exercícios em três níveis:
+
+| Nível | O que é | Obrigatoriedade |
+|-------|---------|-----------------|
+| **Básico** | Reprodução direta do que foi ensinado com pequena variação | Obrigatório — não avance sem completar |
+| **Intermediário** | Aplicação combinando conceitos do tópico e anteriores | Fortemente recomendado |
+| **Avançado** | Desafio de autonomia que vai além do conteúdo explícito | Opcional — para quem quer mais |
+
+### Regra de Progresso
+
+> Não avance para o próximo tópico sem conseguir fazer o nível Básico **e** explicar com suas próprias palavras o que o código faz e por que existe.
+
+---
+
+## As Três Perguntas
+
+Ao final de cada bloco de conteúdo, responda mentalmente:
+
+1. **O que isso faz?** — descreva o comportamento
+2. **Por que isso existe?** — qual problema resolve
+3. **O que acontece se eu remover essa parte?** — teste e descubra
+
+---
+
+## Configuração do Ambiente
+
+Antes de iniciar o Módulo 1:
+
+```bash
+# Verificar Java 21+
+java -version
+
+# Verificar Maven 3.9+
+mvn -version
+
+# Verificar Docker (necessário a partir do Módulo 2)
+docker --version
+```
+
+**IDE recomendada:** IntelliJ IDEA Community Edition (gratuito)
+**Alternativa:** VS Code com extensão "Extension Pack for Java"
+
+### Oracle via Docker (necessário a partir do Módulo 2)
+
+```bash
+# Na raiz do repositório
+docker compose -f docker/docker-compose.oracle.yml up -d
+
+# Aguardar ~60 segundos e checar
+docker logs oracle-xe | grep "DATABASE IS READY"
+```
+
+---
+
+## Quando Travar
+
+1. **Releia** a seção onde travou — lentamente, linha por linha
+2. **Isole** o problema: qual linha ou conceito está confuso?
+3. **Pesquise** o erro exato no Google — é o que desenvolvedores fazem diariamente
+4. **Experimente** no código: teste hipóteses removendo e adicionando partes
+5. **Revise** o módulo anterior — o problema pode estar em um conceito anterior
+
+---
+
+## Sobre o Projeto Prático de Cada Módulo
+
+Cada módulo culmina em um projeto prático que integra tudo que foi aprendido:
+
+| Módulo | Projeto |
+|--------|---------|
+| 1 — Java OO | Sistema de Gerenciamento de Biblioteca (console) |
+| 2 — Oracle SQL | Schema completo de e-commerce com scripts SQL |
+| 3 — JDBC | CRUD de Clientes conectado ao Oracle |
+| 4 — REST API | Documentação e design de uma API REST |
+| 5 — Spring Boot | API REST de Clientes com Spring Boot + JPA |
+| 6 — Spring Batch | Sistema de processamento de pedidos (CSV ↔ Oracle) |
+
+O projeto do Módulo 5 evolui naturalmente para o Módulo 6 — você adicionará processamento batch à API que construiu.
+
+---
+
+**Pronto para começar? Abra [`modulo-01-java-oo/README.md`](modulo-01-java-oo/README.md) e vamos nessa.**
