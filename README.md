@@ -63,18 +63,16 @@ Conexão: `jdbc:oracle:thin:@localhost:1521/XEPDB1` | user: `javazero` | senha: 
 ```
 java-zero-to-hero/
 ├── docs/
-│   ├── modulo-01-java-oo/          # 9 tópicos + README
-│   ├── modulo-02-banco-dados/      # 5 tópicos + README
-│   ├── modulo-03-jdbc/             # 4 tópicos + README
-│   ├── modulo-04-rest-api/         # 5 tópicos + README
-│   ├── modulo-05-spring-boot/      # 5 tópicos + README
-│   ├── modulo-06-spring-batch/     # 6 tópicos + README
+│   ├── modulo-01-java-oo/          # 9 tópicos + exercicios.md + README
+│   ├── modulo-02-banco-dados/      # 5 tópicos + exercicios.md + README
+│   ├── modulo-03-jdbc/             # 4 tópicos + exercicios.md + README
+│   ├── modulo-04-rest-api/         # 5 tópicos + exercicios.md + README
+│   ├── modulo-05-spring-boot/      # 5 tópicos + exercicios.md + README
+│   ├── modulo-06-spring-batch/     # 6 tópicos + exercicios.md + README
 │   ├── TRILHA-DE-APRENDIZADO.md    # Mapa completo da formação
 │   └── 00-como-usar-este-material.md
 ├── docker/                         # docker-compose.oracle.yml
-├── sql/                            # Scripts DDL e DML
-├── exercicios/                     # Atividades por dia (legado)
-└── respostas/                      # Gabaritos (legado)
+└── sql/                            # Scripts DDL e DML
 ```
 
 ---
