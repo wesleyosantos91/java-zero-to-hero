@@ -136,7 +136,8 @@ docs/modulo-01-java-oo/
 ├── 06-excecoes.md
 ├── 07-collections.md
 ├── 08-enum-e-boas-praticas.md
-└── 09-projeto-pratico.md        ← Conclua aqui
+├── 09-projeto-pratico.md        ← Projeto integrador
+└── exercicios.md                ← 43 exercícios + desafio integrador
 ```
 
 ---

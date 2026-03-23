@@ -110,7 +110,8 @@ modulo-06-spring-batch/
 ├── 03-importacao-arquivo-para-oracle.md   (Fluxo 1: CSV local -> Oracle)
 ├── 04-exportacao-oracle-para-arquivo.md   (Fluxo 2: Oracle -> CSV local)
 ├── 05-jobs-avancados.md                   (Particionamento, fluxos condicionais, monitoramento)
-└── 06-projeto-final-batch.md             (Projeto final: processamento de pedidos)
+├── 06-projeto-final-batch.md             (Projeto final: processamento de pedidos)
+└── exercicios.md                          (32 exercícios + desafio de pipeline de folha de pagamento)
 ```
 
 ---

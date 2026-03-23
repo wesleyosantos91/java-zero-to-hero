@@ -99,7 +99,8 @@ modulo-02-banco-dados/
 ├── 02-ddl-criacao-tabelas.md          ← Criação e alteração de estruturas
 ├── 03-dml-manipulacao-dados.md        ← Inserção, consulta, atualização, remoção
 ├── 04-relacionamentos-e-joins.md      ← FK, JOINs, subqueries, índices
-└── 05-exercicios-e-projeto.md         ← Exercícios práticos e projeto final
+├── 05-exercicios-e-projeto.md         ← Exercícios integrados por tópico
+└── exercicios.md                      ← 22 exercícios + 7 relatórios de desafio
 ```
 
 **Sequência recomendada:** leia os arquivos em ordem numérica. Cada arquivo pressupõe o conteúdo do anterior.

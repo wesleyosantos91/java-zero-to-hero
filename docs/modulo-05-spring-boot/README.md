@@ -146,7 +146,8 @@ modulo-05-spring-boot/
 ├── 02-controllers-e-endpoints.md      ← Prática: criando endpoints REST
 ├── 03-services-e-repositorios.md      ← Prática: camadas de serviço e JPA
 ├── 04-dtos-validacao-e-erros.md       ← Prática: DTOs, validação, error handling
-└── 05-crud-completo.md                ← Projeto final: CRUD completo com todos os arquivos
+├── 05-crud-completo.md                ← Projeto final: CRUD completo com todos os arquivos
+└── exercicios.md                      ← 27 exercícios + desafio de API Produtos/Categorias
 ```
 
 ---

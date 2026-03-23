@@ -104,7 +104,8 @@ modulo-04-rest-api/
 ├── 02-rest-e-restful.md         ← REST: princípios, restrições e arquitetura
 ├── 03-json-e-payload.md         ← JSON, parâmetros e estrutura de dados
 ├── 04-boas-praticas-e-design.md ← Como projetar APIs profissionais
-└── 05-exercicios-e-revisao.md   ← Revisão completa e exercícios com gabarito
+├── 05-exercicios-e-revisao.md   ← Revisão completa com mapa mental
+└── exercicios.md                ← 19 exercícios + desafio de design de API
 ```
 
 ### Como Estudar Este Módulo

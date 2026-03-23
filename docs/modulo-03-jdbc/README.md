@@ -87,10 +87,11 @@ Você precisa saber:
 ```
 docs/modulo-03-jdbc/
 ├── README.md                        (este arquivo)
-├── 01-introducao-jdbc.md            (Aula 1)
-├── 02-executando-queries.md         (Aula 2)
-├── 03-boas-praticas.md              (Aula 3)
-└── 04-projeto-crud-completo.md      (Aula 4 — Projeto Final)
+├── 01-introducao-jdbc.md            (Aula 1 — Conexão, DriverManager, DataSource)
+├── 02-queries-sql-com-jdbc.md       (Aula 2 — PreparedStatement, ResultSet, batch)
+├── 03-transacoes-e-gerenciamento-conexao.md (Aula 3 — HikariCP, transações, DAO)
+├── 04-projeto-crud-clientes.md      (Aula 4 — Projeto final com menu console)
+└── exercicios.md                    (16 exercícios + desafio integrador)
 ```
 
 ---
